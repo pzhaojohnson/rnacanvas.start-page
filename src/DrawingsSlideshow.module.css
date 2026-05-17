@@ -8,7 +8,7 @@
    */
   min-height: 1200px;
 
-  animation: fade-in 1.5s;
+  animation: fade-in 2s;
 }
 
 @keyframes fade-in {
