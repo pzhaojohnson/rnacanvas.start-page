@@ -4,8 +4,6 @@ import * as styles from './StartPage.module.css';
 
 import { Title } from './Title';
 
-import { Description } from './Description';
-
 import { NewAndOpenButtons } from './NewAndOpenButtons';
 
 import { LearnMoreLinks } from './LearnMoreLinks';
@@ -27,8 +25,6 @@ export class StartPage {
   readonly #upperContentContainer = document.createElement('div');
 
   readonly #title = new Title();
-
-  readonly #description = new Description();
 
   readonly #newAndOpenButtons;
 
@@ -57,7 +53,6 @@ export class StartPage {
 
     [
       this.#title,
-      this.#description,
       this.#newAndOpenButtons,
       this.#learnMoreLinks,
       this.#citationsRequest,

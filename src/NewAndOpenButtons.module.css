@@ -1,11 +1,11 @@
 .new-and-open-buttons {
-  margin-top: 61px;
+  margin-top: 82px;
 
   display: flex;
   flex-direction: row;
   align-items: center;
 
-  gap: 48px;
+  gap: 50px;
 }
 
 .button {
@@ -31,7 +31,7 @@
   font-size: 18px;
   font-weight: 600;
   font-style: normal;
-  color: hsl(240, 83.5%, 16.7%);
+  color: hsl(240, 79.2%, 9.4%);
 
   background-color: transparent;
 
@@ -53,7 +53,7 @@
   bottom: 0px;
   left: 0px;
 
-  border: 1px solid hsl(240, 42.9%, 58.8%);
+  border: 1px solid hsl(240, 25.1%, 46.1%);
   border-radius: 1000px;
 
   z-index: -1;

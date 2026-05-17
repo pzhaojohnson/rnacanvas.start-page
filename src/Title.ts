@@ -32,6 +32,8 @@ class TitleText {
   readonly #twoPoint0 = document.createElement('span');
 
   constructor() {
+    this.domNode.classList.add(styles['title-text']);
+
     this.#RNA.classList.add(styles['RNA']);
     this.#RNA.textContent = 'RNA';
 

@@ -50,7 +50,7 @@ export class DrawingsSlideshow {
     this.#next();
 
     // timing is hard-coded to match fade-in-and-out animation of drawings
-    this.#currentTimeout = setTimeout(() => this.#start(), 4000);
+    this.#currentTimeout = setTimeout(() => this.#start(), 6000);
   }
 
   /**
