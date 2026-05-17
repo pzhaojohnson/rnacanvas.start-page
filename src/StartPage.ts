@@ -49,7 +49,7 @@ export class StartPage {
 
     this.#upperContentContainer.classList.add(styles['upper-content-container']);
 
-    this.domNode.append(this.#upperContentContainer);
+    this.#contentContainer.append(this.#upperContentContainer);
 
     this.#newAndOpenButtons = new NewAndOpenButtons(targetApp);
 
