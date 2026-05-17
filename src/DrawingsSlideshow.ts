@@ -61,7 +61,7 @@ export class DrawingsSlideshow {
 
     let i = Math.floor(Math.random() * drawingsNotBeingShown.length);
 
-    let nextDrawing = drawings[i];
+    let nextDrawing = drawingsNotBeingShown[i];
 
     this.#currentDrawing?.domNode.remove();
 
