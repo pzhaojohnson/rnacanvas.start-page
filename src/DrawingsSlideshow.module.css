@@ -1,0 +1,32 @@
+.drawings-slideshow {
+  margin-top: 15px;
+
+  /**
+   * Make large enough to accomodate the biggest drawing (and avoid the vertical scrollbar changing whenever the drawing changes).
+   *
+   * Use `min-height` instead of `height` in case a drawing is bigger than this.
+   */
+  min-height: 1000px;
+}
+
+.drawing {
+  min-width: 1050px;
+  max-width: 1400px;
+
+  animation: fade-in-and-out 4s;
+}
+
+@keyframes fade-in-and-out {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

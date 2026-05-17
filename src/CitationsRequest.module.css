@@ -1,0 +1,60 @@
+.citations-request {
+  position: absolute;
+  top: 50px;
+  right: 40px;
+
+  margin: 0px;
+  padding: 0px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+
+  user-select: none;
+  -webkit-user-select: none;
+
+  animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  } 50% {
+    opacity: 0;
+  } 100% {
+    opacity: 1;
+  }
+}
+
+.cite-link {
+  margin-right: 1px;
+
+  cursor: pointer;
+
+  pointer-events: auto;
+
+  text-decoration: none;
+}
+
+.cite-link-text {
+  color: blue;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  text-decoration: none;
+}
+
+.cite-link:hover .cite-link-text {
+  text-decoration: underline;
+}
+
+.link-arrow {
+  height: 14px;
+
+  translate: -3px 2px;
+
+  cursor: pointer;
+}

@@ -1,0 +1,31 @@
+.learn-more-links {
+  margin: 42px 0px 0px 0px;
+  padding: 0px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  color: hsl(240, 2%, 10%);
+
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.link {
+  color: rgb(27, 11, 224);
+  font-weight: 600;
+
+  user-select: auto;
+  -webkit-user-select: auto;
+
+  pointer-events: auto;
+
+  cursor: pointer;
+
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
