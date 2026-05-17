@@ -70,10 +70,10 @@ class OpenButton {
 
       // position the Open form on the right side of the app
       // (might otherwise be on the left side)
-      openForm.domNode.style.right = '50px';
+      openForm.domNode.style.right = '66px';
       openForm.domNode.style.left = '';
 
-      openForm.domNode.style.top = '50px';
+      openForm.domNode.style.top = '76px';
       openForm.domNode.style.bottom = '';
 
       targetApp.openForm(openForm);
