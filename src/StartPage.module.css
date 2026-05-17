@@ -2,7 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap');
 
-.start-page {}
+.start-page {
+  background-color: white;
+}
 
 .content-container {
   position: relative;
