@@ -8,11 +8,14 @@
    */
   min-height: 1200px;
 
-  animation: fade-in 2s;
+  animation: fade-in 1.5s;
 }
 
 @keyframes fade-in {
   0% {
+    opacity: 0;
+  }
+  33.3% {
     opacity: 0;
   }
   100% {
