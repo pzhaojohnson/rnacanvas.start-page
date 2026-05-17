@@ -68,6 +68,8 @@ class OpenButton {
 
       openForm.reposition ? openForm.reposition() : {};
 
+      openForm.domNode.style.position = 'absolute';
+
       // position the Open form on the right side of the app
       // (might otherwise be on the left side)
       openForm.domNode.style.right = '66px';
