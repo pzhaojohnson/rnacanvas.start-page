@@ -28,6 +28,9 @@ class ContactEmailLink {
     this.#link.domNode.href = 'mailto:contact@rnacanvas.app';
 
     this.#link.domNode.textContent = 'contact@rnacanvas.app';
+
+    this.#link.domNode.style.userSelect = 'text';
+    this.#link.domNode.style.webkitUserSelect = 'text';
   }
 
   get domNode() {
