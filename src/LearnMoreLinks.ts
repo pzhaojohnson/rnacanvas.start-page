@@ -25,9 +25,9 @@ class ContactEmailLink {
   readonly #link = new Link();
 
   constructor() {
-    this.#link.domNode.href = 'mailto:contact@rnacanvas.app';
+    this.#link.href = 'mailto:contact@rnacanvas.app';
 
-    this.#link.domNode.textContent = 'contact@rnacanvas.app';
+    this.#link.textContent = 'contact@rnacanvas.app';
 
     this.#link.domNode.style.userSelect = 'text';
     this.#link.domNode.style.webkitUserSelect = 'text';
@@ -59,34 +59,44 @@ class GitHubPagesLink {
 }
 
 class Link {
-  readonly domNode = document.createElement('a');
+  readonly domNode = document.createElement('span');
+
+  /**
+   * Wrapped anchor element.
+   *
+   * Wrapping the anchor element prevents the link from stealing focus from the rest of the app
+   * and intefering with key bindings (e.g., the paste key binding for pasting structures to create new drawings).
+   */
+  readonly #a = document.createElement('a');
 
   constructor() {
     this.domNode.classList.add(styles['link']);
+
+    this.domNode.addEventListener('click', () => this.#a.click());
   }
 
   get href() {
-    return this.domNode.href;
+    return this.#a.href;
   }
 
   set href(href) {
-    this.domNode.href = href;
+    this.#a.href = href;
   }
 
   get target() {
-    return this.domNode.target;
+    return this.#a.target;
   }
 
   set target(target) {
-    this.domNode.target = target;
+    this.#a.target = target;
   }
 
   get rel() {
-    return this.domNode.rel;
+    return this.#a.rel;
   }
 
   set rel(rel) {
-    this.domNode.rel = rel;
+    this.#a.rel = rel;
   }
 
   get textContent() {
