@@ -29,7 +29,7 @@ class TitleText {
 
   readonly #canvas = document.createElement('span');
 
-  readonly #twoPoint0 = document.createElement('span');
+  readonly #Code = document.createElement('span');
 
   constructor() {
     this.domNode.classList.add(styles['title-text']);
@@ -40,14 +40,14 @@ class TitleText {
     this.#canvas.classList.add(styles['canvas']);
     this.#canvas.textContent = 'canvas';
 
-    this.#twoPoint0.classList.add(styles['two-point0']);
-    this.#twoPoint0.textContent = '2.0';
+    this.#Code.classList.add(styles['Code']);
+    this.#Code.textContent = 'Code';
 
     let RNA = this.#RNA;
     let canvas = this.#canvas;
-    let twoPoint0 = this.#twoPoint0;
+    let Code = this.#Code;
 
-    this.domNode.append(RNA, canvas, ' ', twoPoint0);
+    this.domNode.append(RNA, canvas, ' ', Code);
   }
 }
 

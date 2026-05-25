@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap');
+
 .title {
   margin-top: 113px;
 
@@ -25,7 +27,7 @@
 }
 
 .RNA {
-  font-size: 41px;
+  font-size: 40px;
   font-weight: 800;
 }
 
@@ -37,15 +39,16 @@
   font-weight: 700;
 }
 
-.two-point0 {
+.Code {
   margin-left: 10px;
 
-  font-size: 38px;
-  font-weight: 800;
+  font-family: "Bitcount Grid Single", system-ui;
+  font-size: 43px;
+  font-weight: 500;
 
   color: cyan;
 
-  animation: rainbow-text 4s linear infinite;
+  animation: rainbow-text 6s linear infinite;
 }
 
 @keyframes rainbow-text {
@@ -63,5 +66,5 @@
   width: 1045px;
   height: 1px;
 
-  background-color: hsla(240, 15%, 75.1%, 0.96);
+  background-color: hsla(240, 18.1%, 83.7%, 0.96);
 }
