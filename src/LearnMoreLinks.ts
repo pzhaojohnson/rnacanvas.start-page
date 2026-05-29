@@ -5,6 +5,8 @@ export class LearnMoreLinks {
 
   readonly #contactEmailLink = new ContactEmailLink();
 
+  readonly #videoGuidesLink = new VideoGuidesLink();
+
   readonly #gitHubPagesLink = new GitHubPagesLink();
 
   constructor() {
@@ -12,9 +14,11 @@ export class LearnMoreLinks {
 
     let contactAtRNAcanvasDotApp = this.#contactEmailLink.domNode;
 
+    let videoGuides = this.#videoGuidesLink.domNode;
+
     let gitHubPage = this.#gitHubPagesLink.domNode;
 
-    this.domNode.append('Want to learn more? Email ', contactAtRNAcanvasDotApp, ' or visit the ', gitHubPage, '.');
+    this.domNode.append('Want to learn more? Email ', contactAtRNAcanvasDotApp, ', check out the ', videoGuides, ' or visit the ', gitHubPage, '.');
   }
 }
 
@@ -31,6 +35,26 @@ class ContactEmailLink {
 
     this.#link.domNode.style.userSelect = 'text';
     this.#link.domNode.style.webkitUserSelect = 'text';
+  }
+
+  get domNode() {
+    return this.#link.domNode;
+  }
+}
+
+class VideoGuidesLink {
+  /**
+   * Wrapped link.
+   */
+  readonly #link = new Link();
+
+  constructor() {
+    this.#link.href = 'https://github.com/pzhaojohnson/rnacanvas.video-guides';
+
+    this.#link.textContent = 'video guides';
+
+    this.#link.target = '_blank';
+    this.#link.rel = 'noreferrer noopener';
   }
 
   get domNode() {
