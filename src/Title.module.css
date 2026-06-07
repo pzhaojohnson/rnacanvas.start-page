@@ -48,7 +48,7 @@
 
   color: cyan;
 
-  animation: rainbow-text 6s linear infinite;
+  animation: rainbow-text 8s linear infinite;
 }
 
 @keyframes rainbow-text {
