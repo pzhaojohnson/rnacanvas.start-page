@@ -53,7 +53,7 @@ class LinkArrow {
   constructor() {
     this.domNode.classList.add(styles['link-arrow']);
 
-    this.domNode.setAttribute('viewBox', '0 0 14 12');
+    this.domNode.setAttribute('viewBox', '6 0 8 8');
 
     this.domNode.innerHTML = `
       <path

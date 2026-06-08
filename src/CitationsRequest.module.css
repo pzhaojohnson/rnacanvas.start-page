@@ -29,8 +29,6 @@
 }
 
 .cite-link {
-  margin-right: -1px;
-
   cursor: pointer;
 
   pointer-events: auto;
@@ -52,9 +50,10 @@
 }
 
 .link-arrow {
-  height: 12px;
+  margin-left: 2px;
+  margin-bottom: 4px;
 
-  translate: -3px 0px;
+  height: 8px;
 
   cursor: pointer;
 }
