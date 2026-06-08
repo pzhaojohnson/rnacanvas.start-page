@@ -29,7 +29,7 @@
 }
 
 .cite-link {
-  margin-right: 1px;
+  margin-right: -1px;
 
   cursor: pointer;
 
@@ -52,9 +52,9 @@
 }
 
 .link-arrow {
-  height: 14px;
+  height: 12px;
 
-  translate: -3px 2px;
+  translate: -3px 0px;
 
   cursor: pointer;
 }
